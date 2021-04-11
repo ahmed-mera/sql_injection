@@ -17,7 +17,7 @@ class Checker{
 
     public static string $ERROR_MSG = "Qualcosa é andato storto, riprova oppure comunica all'amministratore il codice di errore  ";
     public static string $SUCCESS_MSG = "L'operazione é andata a buon fine ;)";
-    protected string $pattern = '/[\/\\?{}|#;$\[\]]|(-|=|\+|\*|\/|@){2,}|(delimiter)/im';
+    protected string $pattern = '/[\/\\?{}|#;$\[\]]|(-|=|\+|\*|\/|@){2,}|(delimiter)|(grant)|(show)/im';
     protected string $patternSql = '/(insert\s)|(update\s)|(create\s)/im';
     private ConfigurationDB $configurationDB;
     private ? PDO $pdo;
@@ -31,7 +31,7 @@ class Checker{
     {
         date_default_timezone_set("Europe/Rome");
 
-        $this->configurationDB = new ConfigurationDB(user: "admin", pass: "1998", dataBasename: "sql_injection");
+        $this->configurationDB = new ConfigurationDB(user: "sql_injection", pass: "Ahm98ed09Me01ra", dataBasename: "sql_injection");
 
         try {
             $this->pdo = $this->configurationDB->connect();
