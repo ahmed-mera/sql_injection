@@ -31,7 +31,7 @@ class Checker{
     {
         date_default_timezone_set("Europe/Rome");
 
-        $this->configurationDB = new ConfigurationDB(user: "sql_injection", pass: "Ahm98ed09Me01ra", dataBasename: "sql_injection");
+        $this->configurationDB = new ConfigurationDB(user: "admin", pass: "1998", dataBasename: "sql_injection");
 
         try {
             $this->pdo = $this->configurationDB->connect();
