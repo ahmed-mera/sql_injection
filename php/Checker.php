@@ -116,7 +116,10 @@ class Checker{
      * @return array|string|null
      * @author Ahmed Mera
      */
-    public function execute(string $query):  array | string | null {
+    public function execute(string $query, $args):  array | string | null {
+        if($query == null)
+            return $this->badRequestResponse($args);
+
         return ($this->isSelectStatement($query)) ? $this->executeQuery($query): $this->execQuery($query);
     }
 

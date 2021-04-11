@@ -144,7 +144,7 @@ $(document).on('keyup', 'textarea', function() {
  */
 function isValidQuery(value){
     const regx = /[\/\\?{}|#;$\[\]]|(-|=|\+|\*|\/|@){2,}|(delimiter)|(grant)|(show)/img
-    return !value.match(regx) && value.length > 14;
+    return !value.match(regx) && value.trim().length > 14;
 }
 
 

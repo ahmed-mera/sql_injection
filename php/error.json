@@ -887,5 +887,180 @@
     ],
     "ipv4": "172.17.0.1",
     "date": "11-04-2021 16:19:18"
+  },
+  "6073143d153d427": {
+    "error_msg": "no post request or missed param req",
+    "error_file": "\/var\/www\/html\/sql_injection\/php\/Checker.php",
+    "error_line": 220,
+    "error_code": 0,
+    "trace": [
+      {
+        "file": "\/var\/www\/html\/sql_injection\/php\/manageData.php",
+        "line": 48,
+        "function": "forbiddenResponse",
+        "class": "Checker",
+        "type": "->",
+        "args": [
+          {
+            "JSESSIONID": "D50A48BD78483C2C63A2A2FBE2C02FFA",
+            "OAuth_Token_Request_State": "b307fe78-1ee0-41ae-9f33-a0e0cad5f301",
+            "pma_lang": "it",
+            "_ga": "GA1.1.1096353750.1617661996",
+            "FeatureOverrides_enableFeatures": "",
+            "FeatureOverrides_disableFeatures": "",
+            "phpMyAdmin": "119ae516ebd59a10d3a11d4272c919e6",
+            "pmaUser-1": "{\"iv\":\"KSHHO+aGz+ajGHCoi+ei8Q==\",\"mac\":\"62855b34922f1ff2bf19eca51e6ab8ee7e262d8f\",\"payload\":\"2+VpjYWglxuEJezliaCvfg==\"}",
+            "pmaAuth-1": "{\"iv\":\"0QD3bZ5cLU13Ga+VLt8rIg==\",\"mac\":\"706d6d62b21dd6850cc4c37832abee09ccb8442b\",\"payload\":\"zQ7fQuEWvM7P2cmmQN\\\/E9CheXo1ZTIgds8qFWJronHg=\"}",
+            "_ga_KTFEVMMH5J": "GS1.1.1618150004.13.1.1618154553.0"
+          }
+        ]
+      }
+    ],
+    "args": {
+      "JSESSIONID": "D50A48BD78483C2C63A2A2FBE2C02FFA",
+      "OAuth_Token_Request_State": "b307fe78-1ee0-41ae-9f33-a0e0cad5f301",
+      "pma_lang": "it",
+      "_ga": "GA1.1.1096353750.1617661996",
+      "FeatureOverrides_enableFeatures": "",
+      "FeatureOverrides_disableFeatures": "",
+      "phpMyAdmin": "119ae516ebd59a10d3a11d4272c919e6",
+      "pmaUser-1": "{\"iv\":\"KSHHO+aGz+ajGHCoi+ei8Q==\",\"mac\":\"62855b34922f1ff2bf19eca51e6ab8ee7e262d8f\",\"payload\":\"2+VpjYWglxuEJezliaCvfg==\"}",
+      "pmaAuth-1": "{\"iv\":\"0QD3bZ5cLU13Ga+VLt8rIg==\",\"mac\":\"706d6d62b21dd6850cc4c37832abee09ccb8442b\",\"payload\":\"zQ7fQuEWvM7P2cmmQN\\\/E9CheXo1ZTIgds8qFWJronHg=\"}",
+      "_ga_KTFEVMMH5J": "GS1.1.1618150004.13.1.1618154553.0"
+    },
+    "ipv4": "172.17.0.1",
+    "date": "11-04-2021 17:22:37"
+  },
+  "607314802af9128": {
+    "error_msg": "SQLSTATE[HY000] [1045] Access denied for user 'admin'@'172.18.0.3' (using password: YES)",
+    "error_file": "\/var\/www\/html\/sql_injection\/php\/ConfigurationDB.php",
+    "error_line": 56,
+    "error_code": 1045,
+    "trace": [
+      {
+        "file": "\/var\/www\/html\/sql_injection\/php\/ConfigurationDB.php",
+        "line": 56,
+        "function": "__construct",
+        "class": "PDO",
+        "type": "->",
+        "args": [
+          "mysql:host=MySQL;port=3306;dbname=sql_injection",
+          "admin",
+          "19980"
+        ]
+      },
+      {
+        "file": "\/var\/www\/html\/sql_injection\/php\/Checker.php",
+        "line": 37,
+        "function": "connect",
+        "class": "ConfigurationDB",
+        "type": "->",
+        "args": []
+      },
+      {
+        "file": "\/var\/www\/html\/sql_injection\/php\/manageData.php",
+        "line": 24,
+        "function": "__construct",
+        "class": "Checker",
+        "type": "->",
+        "args": []
+      }
+    ],
+    "args": [],
+    "ipv4": "172.17.0.1",
+    "date": "11-04-2021 17:23:44"
+  },
+  "607314802cdfb29": {
+    "error_msg": "Service Unavailable errorCode ---> 607314802af9128",
+    "error_file": "\/var\/www\/html\/sql_injection\/php\/Checker.php",
+    "error_line": 246,
+    "error_code": 0,
+    "trace": [
+      {
+        "file": "\/var\/www\/html\/sql_injection\/php\/manageData.php",
+        "line": 43,
+        "function": "serviceUnavailable",
+        "class": "Checker",
+        "type": "->",
+        "args": [
+          {
+            "req": "arguments",
+            "query": null
+          }
+        ]
+      }
+    ],
+    "args": {
+      "req": "arguments",
+      "query": null
+    },
+    "ipv4": "172.17.0.1",
+    "date": "11-04-2021 17:23:44"
+  },
+  "60731482c2ee330": {
+    "error_msg": "SQLSTATE[HY000] [1045] Access denied for user 'admin'@'172.18.0.3' (using password: YES)",
+    "error_file": "\/var\/www\/html\/sql_injection\/php\/ConfigurationDB.php",
+    "error_line": 56,
+    "error_code": 1045,
+    "trace": [
+      {
+        "file": "\/var\/www\/html\/sql_injection\/php\/ConfigurationDB.php",
+        "line": 56,
+        "function": "__construct",
+        "class": "PDO",
+        "type": "->",
+        "args": [
+          "mysql:host=MySQL;port=3306;dbname=sql_injection",
+          "admin",
+          "19980"
+        ]
+      },
+      {
+        "file": "\/var\/www\/html\/sql_injection\/php\/Checker.php",
+        "line": 37,
+        "function": "connect",
+        "class": "ConfigurationDB",
+        "type": "->",
+        "args": []
+      },
+      {
+        "file": "\/var\/www\/html\/sql_injection\/php\/manageData.php",
+        "line": 24,
+        "function": "__construct",
+        "class": "Checker",
+        "type": "->",
+        "args": []
+      }
+    ],
+    "args": [],
+    "ipv4": "172.17.0.1",
+    "date": "11-04-2021 17:23:46"
+  },
+  "60731482c4fed31": {
+    "error_msg": "Service Unavailable errorCode ---> 60731482c2ee330",
+    "error_file": "\/var\/www\/html\/sql_injection\/php\/Checker.php",
+    "error_line": 246,
+    "error_code": 0,
+    "trace": [
+      {
+        "file": "\/var\/www\/html\/sql_injection\/php\/manageData.php",
+        "line": 43,
+        "function": "serviceUnavailable",
+        "class": "Checker",
+        "type": "->",
+        "args": [
+          {
+            "req": "arguments",
+            "query": null
+          }
+        ]
+      }
+    ],
+    "args": {
+      "req": "arguments",
+      "query": null
+    },
+    "ipv4": "172.17.0.1",
+    "date": "11-04-2021 17:23:46"
   }
 }
